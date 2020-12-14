@@ -1,0 +1,20 @@
+{
+  "name": "@hexlet/code",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "My first frontend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skenzi/frontend-project-lvl1.git"
+  },
+  "author": "Dmitry Klimenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skenzi/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Skenzi/frontend-project-lvl1#readme"
+}
