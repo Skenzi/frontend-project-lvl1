@@ -1,8 +1,11 @@
 {
   "name": "@hexlet/code",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "My first frontend project",
+  "bin": {
+     "brain-games": "bin/brain-games.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +19,7 @@
   "bugs": {
     "url": "https://github.com/Skenzi/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Skenzi/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Skenzi/frontend-project-lvl1#readme",
+  "dependencies": {
+  }	  
 }
