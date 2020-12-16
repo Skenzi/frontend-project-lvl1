@@ -3,7 +3,7 @@ env:
   es2020: true
 
 extends: 
-  - 'airbnb-base'
+  - 'eslint-config-airbnb-base'
 
 parserOptions:
   ecmaVersion: 11
