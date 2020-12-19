@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { name, gameIsEven } from '../src/index.js';
+import { name, gameCalc } from '../src/index.js';
 
 const userName = name();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-const isWin = gameIsEven();
+const isWin = gameCalc();
 if (isWin) {
   console.log(`Congratulations ${userName}!`);
 } else {
