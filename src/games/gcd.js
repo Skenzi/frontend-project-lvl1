@@ -13,6 +13,7 @@ const gcd = (num1, num2) => {
 const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min)) + min;
 
 const gameGcd = () => {
+  console.log('Find the greatest common divisor of given numbers.');
   for (let i = 0; i < 3; i += 1) {
     const num1 = getRandomInt();
     const num2 = getRandomInt();

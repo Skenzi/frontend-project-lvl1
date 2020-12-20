@@ -14,6 +14,7 @@ const getRandomInt = (min = 0, max = 30) => Math.floor(Math.random() * (max - mi
 const signs = ['+', '-', '*'];
 
 const gameCalc = () => {
+  console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
     const num1 = getRandomInt();
     const num2 = getRandomInt();

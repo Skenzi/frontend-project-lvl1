@@ -5,6 +5,7 @@ const isEven = (num) => ((num % 2 === 0) ? 'yes' : 'no');
 const getRandomInt = (min = 0, max = 30) => Math.floor(Math.random() * (max - min)) + min;
 
 const gameIsEven = () => {
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const number = getRandomInt();
     console.log(`Question: ${number}`);
@@ -19,4 +20,4 @@ const gameIsEven = () => {
   return true;
 };
 
-export { gameIsEven, getRandomInt };
+export default gameIsEven;
