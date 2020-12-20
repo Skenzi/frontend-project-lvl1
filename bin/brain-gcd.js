@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { name, gameCalc } from '../src/index.js';
+import { name, gameGcd } from '../src/index.js';
 
 const userName = name();
 
-console.log('What is the result of the expression?');
-const isWin = gameCalc();
+console.log('Find the greatest common divisor of given numbers.');
+const isWin = gameGcd();
 if (isWin) {
   console.log(`Congratulations ${userName}!`);
 } else {
