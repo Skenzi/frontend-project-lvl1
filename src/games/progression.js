@@ -22,8 +22,8 @@ const gameProgression = () => {
     const encryptNumber = progression[indexNum];
     progression[indexNum] = '..';
 
-    let newProgression = '';
-    for (let j = 0; j < progression.length; j += 1) {
+    let newProgression = progression[0];
+    for (let j = 1; j < progression.length; j += 1) {
       newProgression = `${newProgression} ${progression[j]}`;
     }
 
