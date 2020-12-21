@@ -27,9 +27,9 @@ const engine = (game) => {
     default: return 0;
   }
   if (isWin) {
-    console.log(`Congratulations ${userName}!`);
+    console.log(`Congratulations, ${userName}!`);
   } else {
-    console.log(`Let's try again, ${userName}.`);
+    console.log(`Let's try again, ${userName}!`);
   }
   return 0;
 };
