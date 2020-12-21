@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
-import {getRandomInt} from '../index.js'
+
+const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min)) + min;
 
 const prime = (num) => {
   for (let i = 2; i <= (num / 2); i += 1) {

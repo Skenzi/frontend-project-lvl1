@@ -10,8 +10,6 @@ import gameProgression from './games/progression.js';
 
 import gamePrime from './games/prime.js';
 
-const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min)) + min;
-
 const engine = (game) => {
   const userName = name();
   let isWin;
@@ -37,5 +35,5 @@ const engine = (game) => {
 };
 
 export {
-  name, engine, getRandomInt,
+  name, engine,
 };

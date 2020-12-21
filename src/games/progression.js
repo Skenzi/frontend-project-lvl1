@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
-import {getRandomInt} from '../index.js'
+
+const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min)) + min;
 
 const creatProgression = () => {
   const progression = [];
