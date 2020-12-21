@@ -5,5 +5,5 @@
 <a href="https://asciinema.org/a/qtcDWLe6SOs4JK774cf46m4Xh">brain-even</a> /
 <a href="https://asciinema.org/a/IGoqVfNOWDl49dk4USyzkeFSm">brain-calc</a> /
 <a href="https://asciinema.org/a/m2gtEfkF61Mjf3lmEyGLWqX6i">brain-gcd</a> /
-<a href="https://asciinema.org/a/LDOsfmKcmoiQXXwC2tHsXvHLI">brain-progression</a> /
+<a href="https://asciinema.org/a/wkZSCDRmwx89hERNDAyym0HAY">brain-progression</a> /
 <a href="https://asciinema.org/a/eM9qofkehOy7LwHXosaXZAxnb">brain-prime</a>
