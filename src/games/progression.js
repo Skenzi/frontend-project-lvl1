@@ -7,22 +7,11 @@ const creatProgression = () => {
   const firstNum = getRandomInt();
   const difference = getRandomInt(1, 10);
   progression.push(firstNum);
-  for (let i = 1; i < getRandomInt(5, 10); i += 1) {
+  for (let i = 1; i < getRandomInt(6, 10); i += 1) {
     progression.push(progression[i - 1] + difference);
   }
   return progression;
 };
-
-const arrayToString = (arr) => {
-  const strProgression = arr.join();
-    const separator = ','
-    const numbers = strProgression.split(separator);
-    let newProgression = '';
-    for (const number of numbers) {
-      newProgression = `${newProgression} ${number}`;
-    }
-    return newProgression;
-}
 
 const gameProgression = () => {
   console.log('What number is missing in the progression?');
@@ -33,7 +22,10 @@ const gameProgression = () => {
     const encryptNumber = progression[indexNum];
     progression[indexNum] = '..';
 
-    const newProgression = arrayToString(progression);
+    let newProgression = '';
+    for (let j = 0; j < progression.length; j += 1) {
+      newProgression = `${newProgression} ${progression[j]}`;
+    }
 
     console.log(`Question: ${newProgression}`);
     const userAnswer = readlineSync.question('Your Answer: ');
