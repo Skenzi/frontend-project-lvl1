@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 
-const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min)) + min;
+const getRandomInt = (min = 1, max = 9) => Math.floor(Math.random() * (max - min)) + min;
 
 const creatProgression = () => {
   const progression = [];
   const firstNum = getRandomInt();
-  const difference = getRandomInt(1, 10);
+  const difference = getRandomInt(1, 5);
   progression.push(firstNum);
-  for (let i = 1; i < getRandomInt(10, 10); i += 1) {
+  for (let i = 1; i < getRandomInt(6, 10); i += 1) {
     progression.push(progression[i - 1] + difference);
   }
   return progression;
