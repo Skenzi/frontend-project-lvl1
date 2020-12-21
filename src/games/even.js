@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
+import {getRandomInt} from '../index.js'
 
 const isEven = (num) => ((num % 2 === 0) ? 'yes' : 'no');
-
-const getRandomInt = (min = 0, max = 30) => Math.floor(Math.random() * (max - min)) + min;
 
 const gameIsEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');

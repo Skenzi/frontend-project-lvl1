@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import {getRandomInt} from '../index.js'
 
 const gcd = (num1, num2) => {
   const minNum = Math.min(num1, num2);
@@ -9,8 +10,6 @@ const gcd = (num1, num2) => {
   }
   return 1;
 };
-
-const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min)) + min;
 
 const gameGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');

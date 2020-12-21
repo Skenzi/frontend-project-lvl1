@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import {getRandomInt} from '../index.js'
 
 const prime = (num) => {
   for (let i = 2; i <= (num / 2); i += 1) {
@@ -8,8 +9,6 @@ const prime = (num) => {
   }
   return 'yes';
 };
-
-const getRandomInt = (min = 2, max = 100) => Math.floor(Math.random() * (max - min)) + min;
 
 const gamePrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');

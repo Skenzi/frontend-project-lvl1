@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import {getRandomInt} from '../index.js'
 
 const calc = (num1, num2, sign) => {
   switch (sign) {
@@ -8,8 +9,6 @@ const calc = (num1, num2, sign) => {
     default: return 0;
   }
 };
-
-const getRandomInt = (min = 0, max = 30) => Math.floor(Math.random() * (max - min)) + min;
 
 const signs = ['+', '-', '*'];
 
