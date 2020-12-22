@@ -10,7 +10,7 @@ const prime = (num) => {
 };
 
 const gamePrime = () => {
-  const num = getRandomInt();
+  const num = getRandomInt(2,);
   console.log(`Question: ${num}`);
   const correctAnswer = prime(num);
   return correctAnswer;
