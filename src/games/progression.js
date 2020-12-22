@@ -13,6 +13,14 @@ const creatProgression = () => {
   return progression;
 };
 
+const toString = (arr) => {
+  let string = arr[0];
+  for (let i = 1; i < arr.length; i += 1) {
+    string = `${string} ${arr[i]}`;
+  }
+  return string;
+};
+
 const gameProgression = () => {
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
@@ -22,10 +30,7 @@ const gameProgression = () => {
     const encryptNumber = progression[indexNum];
     progression[indexNum] = '..';
 
-    let newProgression = progression[0];
-    for (let j = 1; j < progression.length; j += 1) {
-      newProgression = `${newProgression} ${progression[j]}`;
-    }
+    const newProgression = toString(progression);
 
     console.log(`Question: ${newProgression}`);
     const userAnswer = readlineSync.question('Your Answer: ');
