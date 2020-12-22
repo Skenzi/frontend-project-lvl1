@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { engine } from '../src/index.js';
+import { engine, gameCalc } from '../src/index.js';
 
-engine('calc');
+engine(gameCalc, 'What is the result of the expression?');

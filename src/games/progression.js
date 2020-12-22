@@ -1,6 +1,4 @@
-import readlineSync from 'readline-sync';
-
-const getRandomInt = (min = 1, max = 9) => Math.floor(Math.random() * (max - min)) + min;
+import getRandomInt from '../general.js';
 
 const creatProgression = () => {
   const progression = [];
@@ -22,26 +20,19 @@ const toString = (arr) => {
 };
 
 const gameProgression = () => {
-  console.log('What number is missing in the progression?');
-  for (let i = 0; i < 3; i += 1) {
-    const progression = creatProgression();
+  const progression = creatProgression();
 
-    const indexNum = getRandomInt(0, (progression.length - 1));
-    const encryptNumber = progression[indexNum];
-    progression[indexNum] = '..';
+  const indexNum = getRandomInt(0, (progression.length - 1));
+  const encryptNumber = progression[indexNum];
+  progression[indexNum] = '..';
 
-    const newProgression = toString(progression);
+  const newProgression = toString(progression);
 
-    console.log(`Question: ${newProgression}`);
-    const userAnswer = readlineSync.question('Your Answer: ');
-    const correctAnswer = String(encryptNumber);
-    if (userAnswer !== correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer! ;(. Correct answer was '${correctAnswer}'.`);
-      return false;
-    }
-    console.log('Correct!');
-  }
-  return true;
+  console.log(`Question: ${newProgression}`);
+
+  const correctAnswer = String(encryptNumber);
+
+  return correctAnswer;
 };
 
 export default gameProgression;

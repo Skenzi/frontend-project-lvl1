@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { engine } from '../src/index.js';
+import { engine, gameIsEven } from '../src/index.js';
 
-engine('even');
+engine(gameIsEven, 'Answer "yes" if the number is even, otherwise answer "no".');

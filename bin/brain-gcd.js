@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { engine } from '../src/index.js';
+import { engine, gameGcd } from '../src/index.js';
 
-engine('gcd');
+engine(gameGcd, 'Find the greatest common divisor of given numbers.');

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { engine } from '../src/index.js';
+import { engine, gameProgression } from '../src/index.js';
 
-engine('progression');
+engine(gameProgression, 'What number is missing in the progression?');

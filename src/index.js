@@ -1,3 +1,4 @@
+import readlineSync from 'readline-sync';
 import gameIsEven from './games/even.js';
 
 import name from './cli.js';
@@ -10,30 +11,23 @@ import gameProgression from './games/progression.js';
 
 import gamePrime from './games/prime.js';
 
-const engine = (game) => {
+const engine = (game, description) => {
   const userName = name();
-  let isWin;
-  switch (game) {
-    case 'even': isWin = gameIsEven();
-      break;
-    case 'calc': isWin = gameCalc();
-      break;
-    case 'gcd': isWin = gameGcd();
-      break;
-    case 'progression': isWin = gameProgression();
-      break;
-    case 'prime': isWin = gamePrime();
-      break;
-    default: return 0;
+  console.log(description);
+  for (let i = 0; i < 3; i += 1) {
+    const correctAnswer = game();
+    const userAnswer = readlineSync.question('Your Answer: ');
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer! ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${userName}!`);
+      return 0;
+    }
+    console.log('Correct!');
   }
-  if (isWin) {
-    console.log(`Congratulations, ${userName}!`);
-  } else {
-    console.log(`Let's try again, ${userName}!`);
-  }
+  console.log(`Congratulations, ${userName}!`);
   return 0;
 };
 
 export {
-  name, engine,
+  name, engine, gameIsEven, gameProgression, gamePrime, gameCalc, gameGcd,
 };
