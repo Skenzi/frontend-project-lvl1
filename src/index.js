@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import gameIsEven from './games/even.js';
 
-import name from './cli.js';
+import greeting from './cli.js';
 
 import gameCalc from './games/calc.js';
 
@@ -12,7 +12,7 @@ import gameProgression from './games/progression.js';
 import gamePrime from './games/prime.js';
 
 const engine = (game, description) => {
-  const userName = name();
+  const userName = greeting();
   console.log(description);
   for (let i = 0; i < 3; i += 1) {
     const correctAnswer = game();
@@ -29,5 +29,5 @@ const engine = (game, description) => {
 };
 
 export {
-  name, engine, gameIsEven, gameProgression, gamePrime, gameCalc, gameGcd,
+  greeting, engine, gameIsEven, gameProgression, gamePrime, gameCalc, gameGcd,
 };
