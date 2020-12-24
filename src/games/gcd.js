@@ -15,7 +15,7 @@ const gameGcd = () => {
   const num2 = getRandomInt();
   const question = `${num1} ${num2}`;
   const correctAnswer = String(gcd(num1, num2));
-  return { correctAnswer, question };
+  return [correctAnswer, question];
 };
 
 export default gameGcd;

@@ -6,7 +6,7 @@ const gameIsEven = () => {
   const number = getRandomInt();
   const question = number;
   const correctAnswer = isEven(number) ? 'yes' : 'no';
-  return { correctAnswer, question };
+  return [correctAnswer, question];
 };
 
 export default gameIsEven;
