@@ -6,11 +6,11 @@ const engine = (game, description) => {
   console.log(`Hello, ${userName}!`);
   console.log(description);
   for (let i = 0; i < 3; i += 1) {
-    const [correctAnswer, question] = game();
-    console.log(`Question: ${question}`);
+    const round = game();
+    console.log(`Question: ${round.question}`);
     const userAnswer = readlineSync.question('Your Answer: ');
-    if (userAnswer !== correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer! ;(. Correct answer was '${correctAnswer}'.`);
+    if (userAnswer !== round.correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer! ;(. Correct answer was '${round.correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return 0;
     }

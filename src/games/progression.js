@@ -32,7 +32,7 @@ const gameProgression = () => {
 
   const correctAnswer = String(encryptNumber);
 
-  return [correctAnswer, question];
+  return { correctAnswer, question };
 };
 
 export default gameProgression;

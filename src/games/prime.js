@@ -13,7 +13,7 @@ const gamePrime = () => {
   const num = getRandomInt(2);
   const question = num;
   const correctAnswer = isPrime(num) ? 'yes' : 'no';
-  return [correctAnswer, question];
+  return { correctAnswer, question };
 };
 
 export default gamePrime;
