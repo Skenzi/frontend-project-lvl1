@@ -28,11 +28,11 @@ const gameProgression = () => {
 
   const newProgression = toString(progression);
 
-  console.log(`Question: ${newProgression}`);
+  const question = newProgression;
 
   const correctAnswer = String(encryptNumber);
 
-  return correctAnswer;
+  return { correctAnswer, question };
 };
 
 export default gameProgression;

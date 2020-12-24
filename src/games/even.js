@@ -1,12 +1,12 @@
 import getRandomInt from '../general.js';
 
-const isEven = (num) => ((num % 2 === 0) ? 'yes' : 'no');
+const isEven = (num) => num % 2 === 0;
 
 const gameIsEven = () => {
   const number = getRandomInt();
-  console.log(`Question: ${number}`);
-  const correctAnswer = isEven(number);
-  return correctAnswer;
+  const question = number;
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  return { correctAnswer, question };
 };
 
 export default gameIsEven;

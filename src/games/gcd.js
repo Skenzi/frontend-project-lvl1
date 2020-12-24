@@ -2,9 +2,9 @@ import getRandomInt from '../general.js';
 
 const gcd = (num1, num2) => {
   const minNum = Math.min(num1, num2);
-  for (let i = minNum; i > 1; i -= 1) {
-    if (num1 % i === 0 && num2 % i === 0) {
-      return i;
+  for (let divider = minNum; divider > 1; divider -= 1) {
+    if (num1 % divider === 0 && num2 % divider === 0) {
+      return divider;
     }
   }
   return 1;
@@ -13,9 +13,9 @@ const gcd = (num1, num2) => {
 const gameGcd = () => {
   const num1 = getRandomInt();
   const num2 = getRandomInt();
-  console.log(`Question: ${num1} ${num2}`);
+  const question = `${num1} ${num2}`;
   const correctAnswer = String(gcd(num1, num2));
-  return correctAnswer;
+  return { correctAnswer, question };
 };
 
 export default gameGcd;

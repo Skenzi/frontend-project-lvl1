@@ -15,9 +15,9 @@ const gameCalc = () => {
   const num1 = getRandomInt();
   const num2 = getRandomInt();
   const signIndex = getRandomInt(0, 2);
-  console.log(`Question: ${num1} ${signs[signIndex]} ${num2}`);
+  const question = `${num1} ${signs[signIndex]} ${num2}`;
   const correctAnswer = String(calc(num1, num2, signs[signIndex]));
-  return correctAnswer;
+  return { correctAnswer, question };
 };
 
 export default gameCalc;
