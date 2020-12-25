@@ -1,4 +1,5 @@
-import getRandomInt from '../general.js';
+import getRandomInt from '../utils.js';
+import engine from '../index.js';
 
 const gcd = (num1, num2) => {
   const minNum = Math.min(num1, num2);
@@ -10,7 +11,7 @@ const gcd = (num1, num2) => {
   return 1;
 };
 
-const gameGcd = () => {
+const gameRound = () => {
   const num1 = getRandomInt();
   const num2 = getRandomInt();
   const question = `${num1} ${num2}`;
@@ -18,4 +19,4 @@ const gameGcd = () => {
   return { correctAnswer, question };
 };
 
-export default gameGcd;
+export default () => engine(gameRound, 'Find the greatest common divisor of given numbers.');

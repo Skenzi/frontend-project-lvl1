@@ -1,4 +1,5 @@
-import getRandomInt from '../general.js';
+import getRandomInt from '../utils.js';
+import engine from '../index.js';
 
 const creatProgression = () => {
   const progression = [];
@@ -11,22 +12,14 @@ const creatProgression = () => {
   return progression;
 };
 
-const toString = (arr) => {
-  let string = arr[0];
-  for (let i = 1; i < arr.length; i += 1) {
-    string = `${string} ${arr[i]}`;
-  }
-  return string;
-};
-
-const gameProgression = () => {
+const gameRound = () => {
   const progression = creatProgression();
 
   const indexNum = getRandomInt(0, (progression.length - 1));
   const encryptNumber = progression[indexNum];
   progression[indexNum] = '..';
 
-  const newProgression = toString(progression);
+  const newProgression = progression.join(' ');
 
   const question = newProgression;
 
@@ -35,4 +28,4 @@ const gameProgression = () => {
   return { correctAnswer, question };
 };
 
-export default gameProgression;
+export default () => engine(gameRound, 'What number is missing in the progression?');
