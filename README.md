@@ -27,8 +27,10 @@ In this game, you need to specify whether the number is Prime.
 
 ## Asciinems
 Demo:
+
 [![asciicast](asciinems/even.svg)](https://asciinema.org/a/382110)
 Other games:
+
 [![asciicast](https://asciinema.org/a/382111.svg)](https://asciinema.org/a/382111)
 [![asciicast](https://asciinema.org/a/382112.svg)](https://asciinema.org/a/382112)
 [![asciicast](https://asciinema.org/a/382113.svg)](https://asciinema.org/a/382113)
