@@ -26,11 +26,11 @@ In this game you will be given a series of numbers in which one number is omitte
 In this game, you need to specify whether the number is Prime.
 
 ## Asciinems
-<a href="https://asciinema.org/a/381090">brain-even</a> /
-<a href="https://asciinema.org/a/381091">brain-calc</a> /
-<a href="https://asciinema.org/a/381093">brain-gcd</a> /
-<a href="https://asciinema.org/a/381094">brain-progression</a> /
-<a href="https://asciinema.org/a/381092">brain-prime</a>
+[![asciicast](https://asciinema.org/a/381090.png)](https://asciinema.org/a/381090)
+[![asciicast](https://asciinema.org/a/381091.png)](https://asciinema.org/a/381091)
+[![asciicast](https://asciinema.org/a/381092.png)](https://asciinema.org/a/381092)
+[![asciicast](https://asciinema.org/a/381093.png)](https://asciinema.org/a/381093)
+[![asciicast](https://asciinema.org/a/381094.png)](https://asciinema.org/a/381094)
 
 ## Install
 

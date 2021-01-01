@@ -1,13 +1,13 @@
 import getRandomInt from '../utils.js';
-import engine from '../index.js';
+import runEngine from '../index.js';
 
 const isEven = (num) => num % 2 === 0;
 
-const gameRound = () => {
+const genRoundData = () => {
   const number = getRandomInt();
-  const question = number;
+  const question = String(number);
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   return { correctAnswer, question };
 };
 
-export default () => engine(gameRound, 'Answer "yes" if the number is even, otherwise answer "no".');
+export default () => runEngine(genRoundData, 'Answer "yes" if the number is even, otherwise answer "no".');

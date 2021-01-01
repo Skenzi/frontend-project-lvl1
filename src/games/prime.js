@@ -1,7 +1,10 @@
 import getRandomInt from '../utils.js';
-import engine from '../index.js';
+import runEngine from '../index.js';
 
 const isPrime = (num) => {
+  if (num === 0 || num === 1 || Math.sign(num) === -1) {
+    return false;
+  }
   for (let i = 2; i <= (num / 2); i += 1) {
     if (num % i === 0) {
       return false;
@@ -10,11 +13,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const gameRound = () => {
-  const num = getRandomInt(2);
-  const question = num;
+const genRoundData = () => {
+  const num = getRandomInt();
+  const question = String(num);
   const correctAnswer = isPrime(num) ? 'yes' : 'no';
   return { correctAnswer, question };
 };
 
-export default () => engine(gameRound, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+export default () => runEngine(genRoundData, 'Answer "yes" if given number is prime. Otherwise answer "no".');
