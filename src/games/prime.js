@@ -2,7 +2,7 @@ import getRandomInt from '../utils.js';
 import runEngine from '../index.js';
 
 const isPrime = (num) => {
-  if (num === 0 || num === 1 || Math.sign(num) === -1) {
+  if (num < 2) {
     return false;
   }
   for (let i = 2; i <= (num / 2); i += 1) {
