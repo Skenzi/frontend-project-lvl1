@@ -26,11 +26,13 @@ In this game you will be given a series of numbers in which one number is omitte
 In this game, you need to specify whether the number is Prime.
 
 ## Asciinems
-[![asciicast](asciinems/even.svg)](https://asciinema.org/a/381090)
-[![asciicast](asciinems/calc.svg)](https://asciinema.org/a/381091)
-[![asciicast](asciinems/gcd.svg)](https://asciinema.org/a/381092)
-[![asciicast](asciinems/progression.svg)](https://asciinema.org/a/381093)
-[![asciicast](asciinems/prime.svg)](https://asciinema.org/a/381094)
+Demo:
+[![asciicast](asciinems/even.svg)](https://asciinema.org/a/382110)
+Other games:
+[![asciicast](https://asciinema.org/a/382111.svg)](https://asciinema.org/a/382111)
+[![asciicast](https://asciinema.org/a/382112.svg)](https://asciinema.org/a/382112)
+[![asciicast](https://asciinema.org/a/382113.svg)](https://asciinema.org/a/382113)
+[![asciicast](https://asciinema.org/a/382114.svg)](https://asciinema.org/a/382114)
 
 ## Install
 
