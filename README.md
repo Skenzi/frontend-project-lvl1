@@ -35,7 +35,7 @@ In this game, you need to specify whether the number is Prime.
 ## Install
 
 ```sh
-npm link @hexlet/code
+npm install
 ```
 
 ## Run game
