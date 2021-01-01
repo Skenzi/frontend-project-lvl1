@@ -35,7 +35,7 @@ In this game, you need to specify whether the number is Prime.
 ## Install
 
 ```sh
-npm install
+make install
 ```
 
 ## Run game
