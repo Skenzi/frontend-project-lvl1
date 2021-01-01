@@ -1,5 +1,4 @@
 /node_modules/
-/asciinems/
 .log
 dist
 coverage
